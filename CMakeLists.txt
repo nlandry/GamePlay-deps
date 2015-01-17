@@ -61,6 +61,7 @@ endif(NOT WIN32 AND BUILD_EXTRA_LIBS)
 # Ogg needs to be built before vorbis
 add_subdirectory(ogg-1.3.2)
 add_subdirectory(vorbis-1.3.4)
+add_subdirectory(theora-1.1.1)
 
 add_subdirectory(bullet-2.82-r2704)
 
@@ -77,6 +78,7 @@ set(BUILD_TARGETS
     zlibstatic
     lua
     tinyxml2static
+    theoradec
 )
 
 if (NOT APPLE)
